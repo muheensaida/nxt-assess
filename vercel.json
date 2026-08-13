@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/ccbp-api/:path*",
+      "destination": "https://apis.ccbp.in/:path*"
+    }
+  ]
+}
