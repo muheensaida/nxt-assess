@@ -307,8 +307,9 @@ const Assessment = () => {
               {!isLastQuestion && (
                 <button
                   type="button"
-                  className="btn btn-warning skip-btn"
+                  className={`btn btn-warning skip-btn ${isCurrentLocked ? 'btn-disabled' : ''}`}
                   onClick={handleSkipQuestion}
+                  disabled={isCurrentLocked}
                 >
                   Skip
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
