@@ -1,0 +1,67 @@
+.config-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.config-stats {
+  display: flex;
+  align-items: stretch;
+  padding: 16px;
+  gap: 0;
+}
+
+.config-stat {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.stat-icon {
+  width: 36px; height: 36px;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.answered-icon {
+  background: #dcfce7;
+  color: #16a34a;
+  border: 1px solid #86efac;
+}
+.unanswered-icon {
+  background: #fef3c7;
+  color: #d97706;
+  border: 1px solid #fde68a;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat-count {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1;
+}
+.answered .stat-count { color: #16a34a; }
+.unanswered .stat-count { color: #d97706; }
+
+.stat-label {
+  font-size: 0.72rem;
+  color: #64748b;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.config-divider {
+  width: 1px;
+  background: #e2e8f0;
+  margin: 4px 0;
+}

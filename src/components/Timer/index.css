@@ -1,0 +1,83 @@
+.timer-container {
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  transition: all 0.3s;
+}
+
+.timer-header {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #475569;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.timer-header svg { color: #4f46e5; }
+
+.timer-display {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.timer-digits {
+  font-size: 2.4rem;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+  color: #4f46e5;
+  line-height: 1;
+  min-width: 60px;
+  text-align: center;
+  transition: color 0.3s;
+}
+
+.timer-colon {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #64748b;
+  animation: blink 1s step-end infinite;
+  margin-bottom: 4px;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.timer-progress {
+  height: 4px;
+  background: #e2e8f0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.timer-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4f46e5, #0284c7);
+  border-radius: 2px;
+  transition: width 1s linear, background 0.3s;
+}
+
+/* Low time warning */
+.timer-low .timer-digits {
+  color: #d97706;
+}
+.timer-low .timer-progress-fill {
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+}
+
+/* Critical time */
+.timer-critical .timer-digits {
+  color: #dc2626;
+  animation: timerPulse 0.5s ease-in-out infinite alternate;
+}
+.timer-critical .timer-progress-fill {
+  background: linear-gradient(90deg, #ef4444, #dc2626);
+}
+
+@keyframes timerPulse {
+  from { opacity: 1; }
+  to { opacity: 0.6; }
+}

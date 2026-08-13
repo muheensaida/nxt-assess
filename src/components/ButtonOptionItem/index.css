@@ -1,0 +1,60 @@
+.option-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+.option-btn:hover {
+  background: #f8fafc;
+  border-color: #818cf8;
+  transform: translateX(4px);
+}
+
+.option-btn-selected {
+  background: #e0e7ff !important;
+  border-color: #4f46e5 !important;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.15), 0 4px 12px rgba(79, 70, 229, 0.1);
+}
+
+.option-letter {
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #475569;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.option-letter-selected {
+  background: #4f46e5;
+  border-color: #4f46e5;
+  color: #fff;
+}
+
+.option-text {
+  flex: 1;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1e293b;
+  line-height: 1.5;
+}
+.option-btn-selected .option-text { color: #0f172a; font-weight: 600; }
+
+.option-check-icon {
+  color: #4f46e5;
+  flex-shrink: 0;
+}
