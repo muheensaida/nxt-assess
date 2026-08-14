@@ -63,7 +63,7 @@ const Login = () => {
           </p>
           <div className="login-stats">
             <div className="stat-item">
-              <span className="stat-num">10+</span>
+              <span className="stat-num">10</span>
               <span className="stat-label">Questions</span>
             </div>
             <div className="stat-item">
